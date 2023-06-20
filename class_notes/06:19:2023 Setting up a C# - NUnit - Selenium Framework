@@ -1,0 +1,83 @@
+
+
+
+06/19/2023 Setting up a C# - NUnit - Selenium Framework
+
+
+Selenium with JAVA
+	TDD Framework: based on TestNG, Maven
+			@Test, xml files, Maven Profiles, Maven Goals, Git, Jenkins
+
+	BDD Framework: based on Cucumber, JUnit, Maven
+			Runner, Tags, Maven Goal, Git, Jenkins
+
+
+Selenium with C#
+	TDD Framework: based on NUnit and .NET
+		[Test], Azure DevOps
+
+Azure DevOps = JIRA + Confluence + GitHub + Jenkins + more...
+
+
+
+
+
+HOW TO SET UP A FRAMEWORK:
+1. Programming language + IDE 	C# - Visual Studio
+2. Build tool
+3. Create a new project
+4. Configure dependencies from Tools/Nuget Package Manager
+	Selenium.WebDriver 3.141.0
+	Selenium.Support 3.141.0
+	Selenium.WebDriver.ChromeDriver Latest version
+	NUnit Latest version
+	NUnit3TestAdapter Latest version
+
+
+	Install the required software: To begin, you will need to install Visual Studio as your IDE (if not already installed). You can download it at https://visualstudio.microsoft.com/downloads/
+
+	1. Select .NET to build your automation framework.
+	2. Create a new NUnit Test Project and give it a proper name like UIAutomationFramework or APIAutomationFramework.
+	3. Link your repo with a remote repository.
+
+
+
+5. Start automation!!!
+
+TEST CASE 1:
+Go to "https://techglobal-training.com/"
+Validate the logo is displayed
+
+
+TEST CASE 2:
+Go to "https://techglobal-training.com/"
+Validate the the "Practices" dropdown
+
+using = import
+namespace = package
+
+
+BIGGEST DISADVANTAGE: There is no auto-import
+You need to import all the packages you want to in your classes.
+
+
+
+driver.manage().window().maximize();
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+
+
+IMPROVEMENTS:
+-Move setup and teardown actions in a base class and implement inheritance for better code reusability
+-Centralize web elements using Page Object Model design pattern
+-Utils: Driver, Waiter etc.
+
+
+
+
+CLI commands go into Folder
+Git commands
+
+
+
+
