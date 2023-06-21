@@ -1,67 +1,46 @@
-﻿using NUnit.Framework;
-using System;
+﻿using _NET_UI_Automation_6.pages;
+using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 
 namespace _NET_UI_Automation_6.scripts
 {
 	[TestFixture]
-	public class HeaderTest
+	public class HeaderTest : BaseTest
 	{
-		public static IWebDriver driver;
 
-        // Before - set up actions
-        [SetUp]
-		public void SetUp()
+		[SetUp]
+		public void SetPage()
 		{
-            // Set up driver
-            driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
-            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(30);
-
-            // Navigate to url
-            driver.Navigate().GoToUrl("https://techglobal-training.com/");
-        }
-
-		// After - teardown actions
-		[TearDown]
-		public void TearDown()
-		{
-            // Quit driver
-            driver.Quit();
-        }
+			basePage = new BasePage();
+		}
 
 		[Test] // Like @Test annotation from TestNG
 		public void ValidateLogo()
 		{
-			// Locate web elements using 8 different locators
-			IWebElement logo = driver.FindElement(By.Id("logo"));
-
+			Thread.Sleep(1000);
 			// Assertions
-			Assert.That(logo.Displayed);
+			Assert.That(basePage.logo.Displayed);
         }
 
 
 		[Test]
 		public void ValidateThePracticesDropdown()
 		{
-			IWebElement practicesDropdown = driver.FindElement(By.Id("dropdown-button"));
-			IList<IWebElement> dropdownOptions = driver.FindElements(By.CssSelector("#dropdown-menu a"));
+			
 
             string[] expectedTexts = { "Frontend Testing", "Backend Testing", "Java Exercises", "JS Exercises", "Mock Interviews" };
 
-            Assert.That(practicesDropdown.Displayed);
-			Assert.That(practicesDropdown.Text, Is.EqualTo("Practices"));
+            Assert.That(basePage.practicesDropdown.Displayed);
+			Assert.That(basePage.practicesDropdown.Text, Is.EqualTo("Practices"));
 
 
 			Actions actions = new Actions(driver);
-			actions.MoveToElement(practicesDropdown).Perform();
+			actions.MoveToElement(basePage.practicesDropdown).Perform();
 
-			for(int i = 0; i < dropdownOptions.Count; i++)
+			for(int i = 0; i < basePage.dropdownOptions.Count; i++)
 			{
-				Assert.That(dropdownOptions[i].Text, Is.EqualTo(expectedTexts[i]));
+				Assert.That(basePage.dropdownOptions[i].Text, Is.EqualTo(expectedTexts[i]));
 			}
         }
 

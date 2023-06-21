@@ -1,0 +1,67 @@
+
+
+
+06-20-2023 Implementation of Base class and Page Object Model
+
+
+.NET/C#, NUnit, Selenium framework
+
+
+
+NUnit vs TestNG
+-Annotations vs properties
+@Test, @BeforeMethod, @AfterMethod
+[Test], [SetUp], [Teardown]
+
+-Assertions
+Assert.assertTrue(), Assert.assertEquals()
+Assert.That(), Assert.Equal(), Assert.Null(), Assert.Empty()
+
+
+Java vs C#
+-They are both OOP languages so switching fomr one to other is a easy process.
+-There are slight syntax differences, but it is easy to adapt.
+-Java is strict OOP while C# is OOP but it also provides some functional programming.
+
+
+
+Compiled languages: Java, C#		has compiler and strict rules
+	They was wrong! // Compiler error
+
+Interpret languages:  JavaScript  
+	They was wrong! // Interprets this as "They were wrong!" and works.  
+
+
+
+
+
+IMPROVEMENTS:
+-Move setup and teardown actions in a base class and implement inheritance for better code reusability
+-Centralize web elements using Page Object Model design pattern
+-Utils: Driver, Waiter etc.
+
+
+BENEFITS of Page Object Model design pattern?
+-Reusability
+-Maintanence
+
+
+BasePage basePage = new BasePage();
+
+
+
+
+
+TEST CASE 3: 
+Go to "https://techglobal-training.com/"
+Validate the address is "2860 S River Rd Suite 480, Des Plaines, IL 60018"
+Validate the facebook and instagram icons are displayed and clickable
+
+
+TEST CASE 4: 
+Go to "https://techglobal-training.com/"
+Click on "Frontend Testing" from "Practices" dropdown
+Validate that there are 25 cards
+
+
+

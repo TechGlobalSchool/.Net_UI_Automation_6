@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/techglobal/Projects/.Net_UI_Automation_6/.NET_UI_Automation_6/.NET_UI_Automation_6.csproj": {}
+    "/Users/akinkaya/Projects/.Net_UI_Automation_6/.NET_UI_Automation_6/.NET_UI_Automation_6.csproj": {}
   },
   "projects": {
-    "/Users/techglobal/Projects/.Net_UI_Automation_6/.NET_UI_Automation_6/.NET_UI_Automation_6.csproj": {
+    "/Users/akinkaya/Projects/.Net_UI_Automation_6/.NET_UI_Automation_6/.NET_UI_Automation_6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/techglobal/Projects/.Net_UI_Automation_6/.NET_UI_Automation_6/.NET_UI_Automation_6.csproj",
+        "projectUniqueName": "/Users/akinkaya/Projects/.Net_UI_Automation_6/.NET_UI_Automation_6/.NET_UI_Automation_6.csproj",
         "projectName": ".NET_UI_Automation_6",
-        "projectPath": "/Users/techglobal/Projects/.Net_UI_Automation_6/.NET_UI_Automation_6/.NET_UI_Automation_6.csproj",
-        "packagesPath": "/Users/techglobal/.nuget/packages/",
-        "outputPath": "/Users/techglobal/Projects/.Net_UI_Automation_6/.NET_UI_Automation_6/obj/",
+        "projectPath": "/Users/akinkaya/Projects/.Net_UI_Automation_6/.NET_UI_Automation_6/.NET_UI_Automation_6.csproj",
+        "packagesPath": "/Users/akinkaya/.nuget/packages/",
+        "outputPath": "/Users/akinkaya/Projects/.Net_UI_Automation_6/.NET_UI_Automation_6/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/techglobal/.nuget/NuGet/NuGet.Config"
+          "/Users/akinkaya/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -23,8 +23,12 @@
 
   <ItemGroup>
     <None Remove="scripts\" />
+    <None Remove="utils\" />
+    <None Remove="pages\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="scripts\" />
+    <Folder Include="utils\" />
+    <Folder Include="pages\" />
   </ItemGroup>
 </Project>
