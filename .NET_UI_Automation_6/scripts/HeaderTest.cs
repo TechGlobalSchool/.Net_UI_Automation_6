@@ -34,8 +34,6 @@ namespace _NET_UI_Automation_6.scripts
             Assert.That(basePage.practicesDropdown.Displayed);
 			Assert.That(basePage.practicesDropdown.Text, Is.EqualTo("Practices"));
 
-
-			Actions actions = new Actions(driver);
 			actions.MoveToElement(basePage.practicesDropdown).Perform();
 
 			for(int i = 0; i < basePage.dropdownOptions.Count; i++)

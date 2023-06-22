@@ -1,0 +1,73 @@
+
+
+
+06-21-2023 Running scripts for multiple sets of data
+
+
+
+TEST CASE 5: 
+Go to "https://techglobal-training.com/"
+Click on "Mock Interviews" from "Practices" dropdown
+Validate that the header of the login is "Designed for TechGlobal Students"
+
+
+TEST CASE 5: 
+Go to "https://techglobal-training.com/"
+Click on "Mock Interviews" from "Practices" dropdown
+Enter username as "john"
+Enter password as "1234"
+Click on "LOGIN" button
+Validate the error message is "Email or Password does not match!"
+
+
+
+How to run the same script with multiple data sets?
+TestNG -> DataProvider
+Cucumber -> Scenario Outline - Examples
+NUnit -> [TesCase]
+
+
+Azure DevOps - setting up all the reports, suites, pipelines
+
+
+
+Tell me about yourself.
+	-How your career started
+	-What tools, frameworks, testing types, methologies you know or you have familiarity with.
+
+Tell about your framework.
+	-Tools - UI, API, DB
+	-Design
+	-Reporting
+	-Git, Jenkins
+	-Execution point
+		1. Runner
+		2. Tag
+		3. visits your feature files and finds all the matching tags
+		4. executes the step implementation
+		5. generates reports (specified in runner) under target folder
+
+		1. pom.xml profile with surefire
+		2. xml file
+		3. it takes all the scripts listed
+		4. generates surefire reports under target
+
+
+
+Tell me about your companies and your projects you worked.
+
+
+Tell about your regular sprint and your roles and responsibilities.
+
+
+Tell about your Smoke and Regression Suites.
+
+
+
+
+
+
+
+
+
+
